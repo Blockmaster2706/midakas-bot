@@ -8,6 +8,12 @@ namespace Midakas_Bot
 {
     public class Config
     {
+        public Config() 
+        {
+            TOKEN = "";
+            GUILDID = "";
+        }
+
         public string TOKEN { get; set; }
         public string GUILDID { get; set; }
     }

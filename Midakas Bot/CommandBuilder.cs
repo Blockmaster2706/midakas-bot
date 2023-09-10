@@ -17,17 +17,14 @@ namespace Midakas_Bot
             string text = File.ReadAllText(@"./config.json");
             var config = System.Text.Json.JsonSerializer.Deserialize<Config>(text);
 
-            // Let's build a guild command! We're going to need a guild so lets just put that in a variable.
+            List<SlashCommandBuilder> slashCommandBuilders = new List<SlashCommandBuilder>();
+
             var guild = _client.GetGuild(Convert.ToUInt64(config.GUILDID));
 
-            // Next, lets create our slash command builder. This is like the embed builder but for slash commands.
             var helpCommand = new SlashCommandBuilder();
-
-            // Note: Names have to be all lowercase and match the regular expression ^[\w-]{3,32}$
             helpCommand.WithName("help");
-
-            // Descriptions can have a max length of 100.
             helpCommand.WithDescription("Dies ist der Befehl um allgemeine Hilfeinfos zum Bot zu erhalten.");
+            slashCommandBuilders.Add(helpCommand);
 
             try
             {
@@ -50,7 +47,11 @@ namespace Midakas_Bot
                 await Task.Delay(500);
 
                 // With global commands we don't need the guild.
-                await _client.CreateGlobalApplicationCommandAsync(helpCommand.Build());
+                foreach(SlashCommandBuilder commandBuilder in slashCommandBuilders)
+                {
+                    await _client.CreateGlobalApplicationCommandAsync(commandBuilder.Build());
+
+                }
                 // Using the ready event is a simple implementation for the sake of the example. Suitable for testing and development.
                 // For a production bot, it is recommended to only run the CreateGlobalApplicationCommandAsync() once for each command.
             }

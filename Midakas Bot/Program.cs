@@ -8,23 +8,26 @@ using Midakas_Bot.Modules;
 using Newtonsoft.Json;
 using System;
 using System.Text.Json;
+using static System.Net.Mime.MediaTypeNames;
 
 public class Program
 {
     private DiscordSocketClient _client;
+    private Config? _config;
+
+    public Program()
+    {
+        _client = new DiscordSocketClient();
+        _config = System.Text.Json.JsonSerializer.Deserialize<Config>(File.ReadAllText(@"./config.json"));
+    }
 
     public static Task Main(string[] args) => new Program().MainAsync();
 
     public async Task MainAsync()
     {
-        string text = File.ReadAllText(@"./config.json");
-        var config = System.Text.Json.JsonSerializer.Deserialize<Config>(text);
-
-        _client = new DiscordSocketClient();
-
         _client.Log += Log;
 
-        await _client.LoginAsync(TokenType.Bot, config.TOKEN);
+        await _client.LoginAsync(TokenType.Bot, _config.TOKEN);
         await _client.StartAsync();
 
         _client.SlashCommandExecuted += SlashCommandHandler;
@@ -48,7 +51,7 @@ public class Program
     public async Task Client_Ready()
     {
         var commandBuilder = new CommandBuilder();
-        await commandBuilder.RunCommandBuilderAsync(_client);
+        await commandBuilder.RunCommandBuilderAsync(_client, _config);
     }
 
     private async Task SlashCommandHandler(SocketSlashCommand command)
