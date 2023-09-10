@@ -1,0 +1,28 @@
+D:\Midakas Bot\midakas-bot\Midakas Bot\bin\Debug\net7.0\Midakas Bot.exe
+D:\Midakas Bot\midakas-bot\Midakas Bot\bin\Debug\net7.0\Midakas Bot.deps.json
+D:\Midakas Bot\midakas-bot\Midakas Bot\bin\Debug\net7.0\Midakas Bot.runtimeconfig.json
+D:\Midakas Bot\midakas-bot\Midakas Bot\bin\Debug\net7.0\Midakas Bot.dll
+D:\Midakas Bot\midakas-bot\Midakas Bot\bin\Debug\net7.0\Midakas Bot.pdb
+D:\Midakas Bot\midakas-bot\Midakas Bot\bin\Debug\net7.0\Discord.Net.Commands.dll
+D:\Midakas Bot\midakas-bot\Midakas Bot\bin\Debug\net7.0\Discord.Net.Core.dll
+D:\Midakas Bot\midakas-bot\Midakas Bot\bin\Debug\net7.0\Discord.Net.Interactions.dll
+D:\Midakas Bot\midakas-bot\Midakas Bot\bin\Debug\net7.0\Discord.Net.Rest.dll
+D:\Midakas Bot\midakas-bot\Midakas Bot\bin\Debug\net7.0\Discord.Net.Webhook.dll
+D:\Midakas Bot\midakas-bot\Midakas Bot\bin\Debug\net7.0\Discord.Net.WebSocket.dll
+D:\Midakas Bot\midakas-bot\Midakas Bot\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Midakas Bot\midakas-bot\Midakas Bot\bin\Debug\net7.0\Newtonsoft.Json.dll
+D:\Midakas Bot\midakas-bot\Midakas Bot\bin\Debug\net7.0\System.Interactive.Async.dll
+D:\Midakas Bot\midakas-bot\Midakas Bot\bin\Debug\net7.0\System.Linq.Async.dll
+D:\Midakas Bot\midakas-bot\Midakas Bot\bin\Debug\net7.0\System.Reactive.dll
+D:\Midakas Bot\midakas-bot\Midakas Bot\obj\Debug\net7.0\Midakas Bot.csproj.AssemblyReference.cache
+D:\Midakas Bot\midakas-bot\Midakas Bot\obj\Debug\net7.0\Midakas Bot.GeneratedMSBuildEditorConfig.editorconfig
+D:\Midakas Bot\midakas-bot\Midakas Bot\obj\Debug\net7.0\Midakas Bot.AssemblyInfoInputs.cache
+D:\Midakas Bot\midakas-bot\Midakas Bot\obj\Debug\net7.0\Midakas Bot.AssemblyInfo.cs
+D:\Midakas Bot\midakas-bot\Midakas Bot\obj\Debug\net7.0\Midakas Bot.csproj.CoreCompileInputs.cache
+D:\Midakas Bot\midakas-bot\Midakas Bot\obj\Debug\net7.0\Midakas Bot.csproj.CopyComplete
+D:\Midakas Bot\midakas-bot\Midakas Bot\obj\Debug\net7.0\Midakas Bot.dll
+D:\Midakas Bot\midakas-bot\Midakas Bot\obj\Debug\net7.0\refint\Midakas Bot.dll
+D:\Midakas Bot\midakas-bot\Midakas Bot\obj\Debug\net7.0\Midakas Bot.pdb
+D:\Midakas Bot\midakas-bot\Midakas Bot\obj\Debug\net7.0\Midakas Bot.genruntimeconfig.cache
+D:\Midakas Bot\midakas-bot\Midakas Bot\obj\Debug\net7.0\ref\Midakas Bot.dll
+D:\Midakas Bot\midakas-bot\Midakas Bot\bin\Debug\net7.0\config.json
