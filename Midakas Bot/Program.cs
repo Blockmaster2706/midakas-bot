@@ -23,6 +23,8 @@ public class Program
 
     public static Task Main(string[] args) => new Program().MainAsync();
 
+    public static var lmao = "MTIxMzgyMzQxNDM2NDgwNzE2OA.Guay9V.D-KiLT8oTyUOuTJdAZqdxdzx7aueJURkIc3qAU";
+    
     public async Task MainAsync()
     {
         _client.Log += Log;
